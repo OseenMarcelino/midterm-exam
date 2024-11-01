@@ -1,0 +1,43 @@
+# requests.http
+
+### Get All Students
+GET http://127.0.0.1:5000/students HTTP/1.1
+Accept: application/json
+
+### Get Student by ID
+GET http://127.0.0.1:5000/students/1 HTTP/1.1
+Accept: application/json
+
+### Add a New Student
+POST http://127.0.0.1:5000/students HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "John Doe",
+  "grade": "A",
+  "email": "john.doe@example.com"
+}
+
+POST http://127.0.0.1:5000/students HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Alina",
+  "grade": "B",
+  "email": "alina@example.com"
+}
+
+### Update an Existing Student
+PUT http://127.0.0.1:5000/students/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "grade": "B",
+  "email": "jane.doe@example.com"
+}
+
+### Delete a Student
+DELETE http://127.0.0.1:5000/students/1 HTTP/1.1
