@@ -38,7 +38,7 @@ To run the Flask API on your local machine:
    
 2. Navigate to the project directory:
    ```bash
-   cd flask-rest-api-demo
+   cd midterm-exam
 3. Install the dependencies:
    ```bash
    pip install -r requirements.txt
